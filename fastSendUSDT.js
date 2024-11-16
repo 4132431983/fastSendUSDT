@@ -49,6 +49,8 @@ async function sendUSDT() {
 }
 
 // Function to monitor ETH balance
+
+// Function to monitor ETH balance
 async function monitorBalance() {
     try {
         const balance = await provider.getBalance(senderAddress);
@@ -62,7 +64,6 @@ async function monitorBalance() {
         // Suppress errors silently
     }
 }
-
 // Main function to start monitoring
 function startMonitoring() {
     // Poll balance every 100 milliseconds
