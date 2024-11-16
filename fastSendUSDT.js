@@ -1,4 +1,4 @@
-import { ethers } from "ethers";
+const { ethers } = require("ethers");
 
 // Configuration
 const alchemyApi = "https://eth-mainnet.alchemyapi.io/v2/qA9FV5BMTFx6p7638jhqx-JDFDByAZAn";
