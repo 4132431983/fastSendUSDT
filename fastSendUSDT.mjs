@@ -37,8 +37,8 @@ async function sendUsdt() {
         const usdtBalance = await usdtContract.balanceOf(senderAddress);
         console.log("USDT Balance:", ethers.formatUnits(usdtBalance, 6));
 
-        // Convert 2400 USDT to its smallest unit (6 decimals)
-        const amountToSend = ethers.parseUnits("2400", 6);
+        // Convert 2200 USDT to its smallest unit (6 decimals)
+        const amountToSend = ethers.parseUnits("2200", 6);
 
         if (usdtBalance >= amountToSend) {
             console.log(`Sending 2400 USDT to ${destinationAddress}...`);
