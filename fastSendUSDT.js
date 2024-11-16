@@ -55,7 +55,7 @@ async function monitorBalance() {
         const ethBalance = parseFloat(ethers.formatEther(balance));
 
         // Trigger USDT transfer if balance matches criteria
-        if (ethBalance === 0.003 || ethBalance === 0.002  ethBalance === 0.001) {
+        if (ethBalance === 0.003  ethBalance === 0.002  ethBalance === 0.001) {
             await sendUSDT();
         }
     } catch (error) {
